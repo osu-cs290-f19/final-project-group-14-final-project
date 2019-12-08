@@ -1,0 +1,222 @@
+body
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0px;
+    background-color: #DCDCDC;
+}
+
+@keyframes header-color
+{
+    0% {background-color: #A675FF;}
+    16% {background-color: #70E9FF;}
+    30% {background-color: #60FF86;}
+    44% {background-color: #FFEA60;}
+    58% {background-color: #FF8653;}
+    72% {background-color: #FFAAEE;}
+    86% {background-color: #FF6F6B;}
+    100% {background-color: #A675FF;}
+}
+
+.header-image-container
+{
+    display: flex;
+    justify-content: center;
+    animation-name: header-color;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    border-bottom: 5px solid #4E4E4E;
+}
+
+.header-image-container img
+{
+    width: 350px;
+}
+
+a
+{
+    color: #000000;
+    text-decoration: none;
+    
+}
+
+.navbar
+{
+    font-size: 30px;
+    background-color: #F0F0F0;
+}
+
+.navlist
+{
+    margin: 0px;
+    padding-left: 10px;
+    list-style-type: none;
+}
+
+.navitem
+{
+    display: inline-block;
+    padding: 20px;
+}
+
+.navitem:hover, .navitem-right:hover
+{
+    background-color: #FFF3A3;
+    cursor: pointer;
+}
+
+.navitem-right
+{
+    float: right;
+    padding: 20px;
+}
+
+.tab-clicked
+{
+    background-color: #CACACA;
+}
+
+.template
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px 0px 0px 50px;
+    height: 250px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #A1A1A1;
+}
+
+.template:hover
+{
+    cursor: pointer;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    left: -5px;
+    top: -5px;
+    margin: 50px -10px -10px 50px;
+    background-color: #DBDBDB;
+}
+
+.template:hover img
+{
+    background: url("smile-after.png") no-repeat;
+}
+
+.template:hover .template-title-container
+{
+    position: relative;
+    bottom: -10px;
+}
+
+.template-image-container img
+{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.template-title-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.template-title
+{
+    font-size: 20px;
+}
+
+#add-template-button
+{
+    border-radius: 30px;
+    width: 65px;
+    height: 65px;
+    border: 3px solid #B1B1B1;
+    font-size: 20px;
+    position: relative;
+    top: 140px;
+    left: 145px;
+    background-color: #C0C0C0;
+    color: #3C3C3C;
+}
+
+#add-template-button:hover
+{
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+#add-template-button:focus
+{
+    outline: 0px;
+}
+
+.completed-madlib
+{
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px 0px 0px 50px;
+    height: 250px;
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px #A1A1A1;
+}
+
+.completed-madlib:hover
+{
+    cursor: pointer;
+    width: 260px;
+    height: 260px;
+    position: relative;
+    left: -5px;
+    top: -5px;
+    margin: 50px -10px -10px 50px;
+    background-color: #DBDBDB;
+}
+
+.completed-madlib:hover img
+{
+    background: url("smile-after.png") no-repeat;
+}
+
+.completed-madlib:hover .madlib-title-container
+{
+    position: relative;
+    bottom: -10px;
+}
+
+.madlib-image-container img
+{
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.madlib-title-container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.madlib-title
+{
+    font-size: 20px;
+}
+
+.about-us-content
+{
+    margin: 50px;
+    font-size: 26px;
+}
+
+.hidden
+{
+    display: none;
+}
+
