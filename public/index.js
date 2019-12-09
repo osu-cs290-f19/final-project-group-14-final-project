@@ -98,3 +98,23 @@ newTemplateCancelButton.addEventListener('click', function ()
 	newTemplatePrompt.classList.add('hidden');
 	newTemplateInputBox.value = "";
 });
+
+
+
+
+function insertNewPost(title, noun, noun2, verb, adjective, adjective2) {
+
+
+  var TemplateContent =
+  {
+    Title: title,
+    Noun: photoURL,
+    Noun2: price,
+    Verb: city,
+    Adjective: adjective
+  };
+  var TemplateHTML = Handlebars.template.post(TemplateContent);
+  var TemplateContainer = document.getElementById("template")
+  TemplateContainer.insertAdjacentHTML("beforeend",TemplateHTML);
+
+};
