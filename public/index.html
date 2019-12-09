@@ -34,7 +34,7 @@
 							<img src="smile-before.png">
 						</div>
 						<div class="template-title-container">
-							<span class="template-title">[TEMPLATE TITLE]</span>
+							<span class="template-title">[TEMPLATE TITLE #1]</span>
 						</div>
 					</div>
 				</div>
@@ -44,11 +44,11 @@
 							<img src="smile-before.png">
 						</div>
 						<div class="template-title-container">
-							<span class="template-title">[TEMPLATE TITLE]</span>
+							<span class="template-title">[TEMPLATE TITLE #2]</span>
 						</div>
 					</div>
 				</div>
-				
+
 				<button type="button" id="add-template-button">
 					<i class="fas fa-plus"></i>
 				</button>
@@ -61,7 +61,7 @@
 							<img src="smile-before.png">
 						</div>
 						<div class="madlib-title-container">
-							<span class="madlib-title">[MADLIB TITLE]</span>
+							<span class="madlib-title">[MADLIB TITLE #1]</span>
 						</div>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 							<img src="smile-before.png">
 						</div>
 						<div class="madlib-title-container">
-							<span class="madlib-title">[MADLIB TITLE]</span>
+							<span class="madlib-title">[MADLIB TITLE #2]</span>
 						</div>
 					</div>
 				</div>
@@ -85,5 +85,41 @@
 				</div>
 			</section>
 		</main>
+
+		<div id="template-post-backdrop" class="hidden"></div>
+
+		<section id="template-posts" class="hidden">
+			<div class="template-post">
+				<div class="template-post-title-container">
+					<span class="template-post-title"></span>
+				</div>
+				<div class="template-post-body">
+					<div class="word-input-container">
+						<label for="word-noun-input">Noun</label>
+						<input type="text" id="word-noun-input">
+					</div>
+					<div class="word-input-container">
+						<label for="word-noun-input">Noun</label>
+						<input type="text" id="word-noun-input">
+					</div>
+					<div class="word-input-container">
+						<label for="word-verb-input">Verb</label>
+						<input type="text" id="word-verb-input">
+					</div>
+					<div class="word-input-container">
+						<label for="word-adjective-input">Adjective</label>
+						<input type="text" id="word-adjective-input">
+					</div>
+					<div class="word-input-container">
+						<label for="word-adjective-input">Adjective</label>
+						<input type="text" id="word-adjective-input">
+					</div>
+				</div>
+				<div class="template-post-footer">
+					<button type="button" id="template-post-cancel">Cancel</button>
+					<button type="button" id="template-post-submit">Submit</button>
+				</div>
+			</div>
+		</section>
 	</body>
 </html>
