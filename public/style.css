@@ -150,7 +150,7 @@ a
     color: #000000;
 }
 
-#add-template-button:focus
+button:focus
 {
     outline: 0px;
 }
@@ -220,3 +220,102 @@ a
     display: none;
 }
 
+#template-post-backdrop
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: #00000066;
+}
+
+#template-posts
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 1010;
+    overflow: scroll;
+}
+
+.template-post
+{
+    background-color: #FFFFFF;
+    border: 3px solid #000000;
+    border-radius: 15px;
+    max-width: 1000px;
+    margin: 200px auto 0px auto;
+}
+
+.template-post-title-container
+{
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.template-post-body
+{
+    padding: 20px 40px 0px 40px;
+}
+
+.word-input-container
+{
+    font-size: 40px;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.word-input-container > label
+{
+    flex: 1 80px;
+}
+
+.word-input-container > input
+{
+    flex: 5 300px;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.template-post-footer
+{
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+#template-post-cancel
+{
+    background-color: #EBEBEB;
+}
+
+#template-post-cancel:hover
+{
+    background-color: #CECECE;
+}
+
+#template-post-submit
+{
+    background-color: #383838;
+    color: #FFFFFF;
+}
+
+#template-post-submit:hover
+{
+    background-color: #1D1D1D;
+}
+
+#template-post-cancel, #template-post-submit
+{
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 24px;
+    margin: 0px 30px 10px 0px;
+    cursor: pointer;
+}
