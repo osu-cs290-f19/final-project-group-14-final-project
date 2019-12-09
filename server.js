@@ -11,9 +11,6 @@ app.get('/', function (req, res, next)
 	res.status(200).sendFile(__dirname + '/public/index.html');
 });
 
-
-
-
 app.use(express.static('public'));
 
 app.get('*', function (req, res, next)
