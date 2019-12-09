@@ -11,3 +11,6 @@ There should also be a `views/` folder but since it's empty I can't add it to th
 I also created branches for each of us to use. Use the command `git checkout [your name]` to switch to that branch. Please do all your coding there, and each group member will make sure the code you push looks good before merging. This website explains branches fairly well: https://uoftcoders.github.io/studyGroup/lessons/git/branches/lesson/
 
 Godspeed.
+
+
+[Harmless branch commit test - Trinity 12/8/2019]
