@@ -50,7 +50,7 @@ aboutUsTab.addEventListener('click', function ()
 var template = document.getElementsByClassName('template');
 var templateTitle = document.getElementsByClassName('template-title');
 var templatePostTitle = document.getElementsByClassName('template-post-title');
-var templatePostBackdrop = document.getElementById('template-post-backdrop');
+var backdrop = document.getElementById('backdrop');
 var templatePosts = document.getElementById('template-posts');
 
 for (var i = 0; i < template.length; i++)
@@ -62,7 +62,7 @@ for (var i = 0; i < template.length; i++)
 			console.log('== Template clicked');
 			console.log('== Template Title:', templateTitle[index].textContent);
 
-			templatePostBackdrop.classList.remove('hidden');
+			backdrop.classList.remove('hidden');
 			templatePosts.classList.remove('hidden');
 			templatePostTitle[0].textContent = templateTitle[index].textContent;
 		});
@@ -74,6 +74,27 @@ var templatePostCancelButton = document.getElementById('template-post-cancel');
 
 templatePostCancelButton.addEventListener('click', function ()
 {
-	templatePostBackdrop.classList.add('hidden');
+	backdrop.classList.add('hidden');
 	templatePosts.classList.add('hidden');
+});
+
+// Add Template Button
+var addTemplateButton = document.getElementById('add-template-button');
+var newTemplatePrompt = document.getElementById('new-template-container');
+
+addTemplateButton.addEventListener('click', function ()
+{
+	backdrop.classList.remove('hidden');
+	newTemplatePrompt.classList.remove('hidden');
+});
+
+// New Template Cancel Button
+var newTemplateCancelButton = document.getElementById('new-template-cancel');
+var newTemplateInputBox = document.getElementById('new-template-input-box');
+
+newTemplateCancelButton.addEventListener('click', function ()
+{
+	backdrop.classList.add('hidden');
+	newTemplatePrompt.classList.add('hidden');
+	newTemplateInputBox.value = "";
 });

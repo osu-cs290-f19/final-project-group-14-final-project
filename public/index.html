@@ -86,7 +86,7 @@
 			</section>
 		</main>
 
-		<div id="template-post-backdrop" class="hidden"></div>
+		<div id="backdrop" class="hidden"></div>
 
 		<section id="template-posts" class="hidden">
 			<div class="template-post">
@@ -96,28 +96,43 @@
 				<div class="template-post-body">
 					<div class="word-input-container">
 						<label for="word-noun-input">Noun</label>
-						<input type="text" id="word-noun-input">
+						<input type="text" class="word-noun-input">
 					</div>
 					<div class="word-input-container">
 						<label for="word-noun-input">Noun</label>
-						<input type="text" id="word-noun-input">
+						<input type="text" class="word-noun-input">
 					</div>
 					<div class="word-input-container">
 						<label for="word-verb-input">Verb</label>
-						<input type="text" id="word-verb-input">
+						<input type="text" class="word-verb-input">
 					</div>
 					<div class="word-input-container">
 						<label for="word-adjective-input">Adjective</label>
-						<input type="text" id="word-adjective-input">
+						<input type="text" class="word-adjective-input">
 					</div>
 					<div class="word-input-container">
 						<label for="word-adjective-input">Adjective</label>
-						<input type="text" id="word-adjective-input">
+						<input type="text" class="word-adjective-input">
 					</div>
 				</div>
 				<div class="template-post-footer">
 					<button type="button" id="template-post-cancel">Cancel</button>
 					<button type="button" id="template-post-submit">Submit</button>
+				</div>
+			</div>
+		</section>
+
+		<section id="new-template-container" class="hidden">
+			<div class="new-template-window">
+				<div class="new-template-text-container">
+					Create a new Mad Lib template! Below, insert your own text!
+				</div>
+				<div class="new-template-input">
+					<textarea id="new-template-input-box"></textarea>
+				</div>
+				<div class="new-template-footer">
+					<button type="button" id="new-template-cancel">Cancel</button>
+					<button type="button" id="new-template-create">Create</button>
 				</div>
 			</div>
 		</section>
