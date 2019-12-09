@@ -1,0 +1,27 @@
+{
+  "Story1": {
+    "title": "The Rabit Beast",
+    "text": [
+      {
+        "beforeSentence": "There once was a rabid ",
+        "enteredWord": "noun"
+      },
+      {
+        "beforeSentence": ". It was so ",
+        "enteredWord": "adjective"
+      },
+      {
+        "beforeSentence": " and ",
+        "enteredWord": "adjective"
+      },
+      {
+        "beforeSentence": "! I was so scared that I soiled my ",
+        "enteredWord": "noun"
+      },
+      {
+        "beforeSentence": ".",
+        "enteredWord": "Null"
+      }
+    ]
+  }
+}
