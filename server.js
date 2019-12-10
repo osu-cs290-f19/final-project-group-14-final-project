@@ -5,6 +5,7 @@ var http = require("http");
 var app = express();
 var port = process.env.PORT || 3000;
 var completedMadlibData = require('./completedMadlibs');
+var madlibTemplatesData = require('./madlibTemplates');
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
@@ -13,6 +14,7 @@ app.get('/', function (req, res, next)
 {
 	res.status(200).render('content',
 	{
+		madlibTemplatesData: madlibTemplatesData,
 		completedMadlibData: completedMadlibData
 	});
 });

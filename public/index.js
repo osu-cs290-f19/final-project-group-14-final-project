@@ -78,25 +78,14 @@ templatePostCancelButton.addEventListener('click', function ()
 	templatePosts.classList.add('hidden');
 });
 
-// Add Template Button
-var addTemplateButton = document.getElementById('add-template-button');
-var newTemplatePrompt = document.getElementById('new-template-container');
+// Template Post Submit Button
+var templatePostSubmitButton = document.getElementById('template-post-submit');
 
-addTemplateButton.addEventListener('click', function ()
+templatePostSubmitButton.addEventListener('click', function ()
 {
-	backdrop.classList.remove('hidden');
-	newTemplatePrompt.classList.remove('hidden');
-});
-
-// New Template Cancel Button
-var newTemplateCancelButton = document.getElementById('new-template-cancel');
-var newTemplateInputBox = document.getElementById('new-template-input-box');
-
-newTemplateCancelButton.addEventListener('click', function ()
-{
-	backdrop.classList.add('hidden');
-	newTemplatePrompt.classList.add('hidden');
-	newTemplateInputBox.value = "";
+	console.log('== Submit button clicked');
+	
+	// Insert new post somehow
 });
 
 // Completed Mad Libs
