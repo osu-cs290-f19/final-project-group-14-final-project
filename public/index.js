@@ -78,6 +78,16 @@ templatePostCancelButton.addEventListener('click', function ()
 	templatePosts.classList.add('hidden');
 });
 
+// Template Post Submit Button
+var templatePostSubmitButton = document.getElementById('template-post-submit');
+
+templatePostSubmitButton.addEventListener('click', function ()
+{
+	console.log('== Submit button clicked');
+	
+	// Insert new post somehow
+});
+
 // Completed Mad Libs
 var completedMadlib = document.getElementsByClassName('completed-madlib');
 var viewMadlibContainer = document.getElementById('view-madlib-container');

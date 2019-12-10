@@ -35,9 +35,10 @@
 				<span class="template-post-title"></span>
 			</div>
 			<div class="template-post-body">
-				{{#each madlibTemplatesData}}
+				{{#each madlibTemplatesData.template1.text}}
 					{{> wordInput}}
 				{{/each}}
+				<!-- That isn't the proper way to display these -->
 			</div>
 			<div class="template-post-footer">
 				<button type="button" id="template-post-cancel">Cancel</button>
