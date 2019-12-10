@@ -1,0 +1,76 @@
+{
+  "template1": {
+    "title": "Vacations",
+    "text": [
+      {
+        "beforeWord": "A vacation is when you take a trip to some ",
+        "wordType": "adjective"
+      },
+      {
+        "beforeWord": " place with your ",
+        "wordType": "adjective"
+      },
+      {
+        "beforeWord": " family. Usually you go to some place that is near a/an ",
+        "wordType": "noun"
+      },
+      {
+        "beforeWord": " or up on a/an ",
+        "wordType": "noun"
+      },
+      {
+        "beforeWord": ". A good vacation place is one where you can ride ",
+        "wordType": "plural-noun"
+      },
+      {
+        "beforeWord": " or play ",
+        "wordType": "game"
+      },
+      {
+        "beforeWord": " or go hunting for ",
+        "wordType": "plural-noun"
+      },
+      {
+        "beforeWord": ". I like to spend my time ",
+        "wordType": "verb-ending-in-'ing'"
+      },
+      {
+        "beforeWord": " or ",
+        "wordType": "verb-ending-in-'ing'"
+      },
+      {
+        "beforeWord": ". When parents go on a vacation, they spend their time eating three ",
+        "wordType": "plural-noun"
+      },
+      {
+        "beforeWord": " a day, and fathers play golf, and mothers sit around ",
+        "wordType": "verb-ending-in-'ing'"
+      },
+      {
+        "beforeWord": " .",
+        "wordType": "null"
+      }
+    ]
+  },
+  "template2": {
+    "title": "Selecting a Tree",
+    "text": [
+      {
+        "beforeWord": "No Christmas season can be really ",
+        "wordType": "adjective"
+      },
+      {
+        "beforeWord": " unless you have a/an ",
+        "wordType": "adjective"
+      },
+      {
+        "beforeWord": " tree in your ",
+        "wordType": "noun"
+      },
+      {
+        "beforeWord": ". ",
+        "wordType": "null"
+      }
+    ]
+  }
+}

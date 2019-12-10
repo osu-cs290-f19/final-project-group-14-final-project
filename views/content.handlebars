@@ -8,30 +8,9 @@
 	</nav>
 
 	<section id="templates">
-		<div class="template">
-			<div class="template-content">
-				<div class="template-image-container">
-					<img src="smile-before.png">
-				</div>
-				<div class="template-title-container">
-					<span class="template-title">[TEMPLATE TITLE #1]</span>
-				</div>
-			</div>
-		</div>
-		<div class="template">
-			<div class="template-content">
-				<div class="template-image-container">
-					<img src="smile-before.png">
-				</div>
-				<div class="template-title-container">
-					<span class="template-title">[TEMPLATE TITLE #2]</span>
-				</div>
-			</div>
-		</div>
-
-		<button type="button" id="add-template-button">
-			<i class="fas fa-plus"></i>
-		</button>
+		{{#each madlibTemplatesData}}
+			{{> template}}
+		{{/each}}
 	</section>
 
 	<section id="completed-madlibs" class="hidden">
@@ -56,26 +35,9 @@
 				<span class="template-post-title"></span>
 			</div>
 			<div class="template-post-body">
-				<div class="word-input-container">
-					<label for="word-noun-input">Noun</label>
-					<input type="text" class="word-noun-input">
-				</div>
-				<div class="word-input-container">
-					<label for="word-noun-input">Noun2</label>
-					<input type="text" class="word-noun-input">
-				</div>
-				<div class="word-input-container">
-					<label for="word-verb-input">Verb</label>
-					<input type="text" class="word-verb-input">
-				</div>
-				<div class="word-input-container">
-					<label for="word-adjective-input">Adjective</label>
-					<input type="text" class="word-adjective-input">
-				</div>
-				<div class="word-input-container">
-					<label for="word-adjective-input">Adjective2</label>
-					<input type="text" class="word-adjective-input">
-				</div>
+				{{#each madlibTemplatesData}}
+					{{> wordInput}}
+				{{/each}}
 			</div>
 			<div class="template-post-footer">
 				<button type="button" id="template-post-cancel">Cancel</button>
@@ -84,29 +46,12 @@
 		</div>
 	</section>
 
-	<section id="new-template-container" class="hidden">
-		<div class="new-template-window">
-			<div class="new-template-text-container">
-				Create a new Mad Lib template! Below, insert your own text!
-			</div>
-			<div class="new-template-input">
-				<textarea id="new-template-input-box"></textarea>
-			</div>
-			<div class="new-template-footer">
-				<button type="button" id="new-template-cancel">Cancel</button>
-				<button type="button" id="new-template-create">Create</button>
-			</div>
-		</div>
-	</section>
-
 	<section id="view-madlib-container" class="hidden">
 		<div class="view-madlib-window">
 			<div class="view-madlib-title-container">
-				<span class="view-madlib-title">Our Cafeteria</span>
+				<span class="view-madlib-title"></span>
 			</div>
-			<div class="view-madlib-text-container">
-				[example] Our school cafeteria has really gross food. Just thinking about it makes my stomach flip.
-			</div>
+			<div class="view-madlib-text-container"></div>
 			<div class="view-madlib-footer">
 				<button type="button" id="view-madlib-ok">OK</button>
 			</div>
