@@ -18,15 +18,14 @@
 			</div>
 		</header>
 
-		<nav class="navbar">
-			<ul class="navlist">
-				<li class="navitem tab-clicked" id="templates-tab"><span>Templates</span></li>
-				<li class="navitem" id="completed-madlibs-tab"><span>Completed Mad Libs</span></li>
-				<li class="navitem-right" id="about-us-tab"><span>About Us</span></li>
-			</ul>
-		</nav>
-
 		<main class="content">
+			<nav class="navbar">
+				<ul class="navlist">
+					<li class="navitem tab-clicked" id="templates-tab"><span>Templates</span></li>
+					<li class="navitem" id="completed-madlibs-tab"><span>Completed Mad Libs</span></li>
+					<li class="navitem-right" id="about-us-tab"><span>About Us</span></li>
+				</ul>
+			</nav>
 			<section id="templates">
 				<div class="template">
 					<div class="template-content">
@@ -61,7 +60,8 @@
 							<img src="smile-before.png">
 						</div>
 						<div class="madlib-title-container">
-							<span class="madlib-title">[MADLIB TITLE #1]</span>
+							<span class="madlib-title">Our Cafeteria</span>
+							<span class="madlib-text hidden">Our school cafeteria has really gross food. Just thinking about it makes my stomach flip.</span>
 						</div>
 					</div>
 				</div>
@@ -71,7 +71,8 @@
 							<img src="smile-before.png">
 						</div>
 						<div class="madlib-title-container">
-							<span class="madlib-title">[MADLIB TITLE #2]</span>
+							<span class="madlib-title">The Magic Computers</span>
+							<span class="madlib-text hidden">Today, every student has a computer small enough to fit into his bed. He can solve any math problem by simply pushing the computer's little penguins.</span>
 						</div>
 					</div>
 				</div>
@@ -79,62 +80,104 @@
 
 			<section id="about-us" class="hidden">
 				<div class="about-us-content">
-					<div class="about-us-text-container">
-						<span class="about-us-text">This website was created by Kevin Moy, Trinity Polk, and Jarrod Saechao.</span>
+					<h2> Our Team: </h2>
+					<div class="team-member">
+
+						<div class="member">
+						<img src="kevin.jpg">
+							<div class="member-info">
+								<p> Kevin Moy </p>
+								<p> moyke@oregonstate.edu</p>
+								<p> Computer Science Major</p></div>
+					 	</div>
+
+						<div class="member">
+						<img src="trin.jpg" >
+							<div class="member-info">
+								<p> Trinity Polk </p>
+								<p> polktr@oregonstate.edu </p>
+								<p> Computer Science Major</p> </div>
+						</div>
+
+						<div class="member">
+						<img src="jarrod.jpg" >
+							<div class="member-info">
+								<p> Jarrod Saechao </p>
+								<p> saechaoj@oregonstate.edu </p>
+								<p> Computer Science Major Business Minor</p>
+							</div>
+					 	</div>
+
+					</div>
+					</div>
+
+				</div>
+			</section>
+
+			<div id="backdrop" class="hidden"></div>
+
+			<section id="template-posts" class="hidden">
+				<div class="template-post">
+					<div class="template-post-title-container">
+						<span class="template-post-title"></span>
+					</div>
+					<div class="template-post-body">
+						<div class="word-input-container">
+							<label for="word-noun-input">Noun</label>
+							<input type="text" class="word-noun-input">
+						</div>
+						<div class="word-input-container">
+							<label for="word-noun-input">Noun2</label>
+							<input type="text" class="word-noun-input">
+						</div>
+						<div class="word-input-container">
+							<label for="word-verb-input">Verb</label>
+							<input type="text" class="word-verb-input">
+						</div>
+						<div class="word-input-container">
+							<label for="word-adjective-input">Adjective</label>
+							<input type="text" class="word-adjective-input">
+						</div>
+						<div class="word-input-container">
+							<label for="word-adjective-input">Adjective2</label>
+							<input type="text" class="word-adjective-input">
+						</div>
+					</div>
+					<div class="template-post-footer">
+						<button type="button" id="template-post-cancel">Cancel</button>
+						<button type="button" id="template-post-submit">Submit</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="new-template-container" class="hidden">
+				<div class="new-template-window">
+					<div class="new-template-text-container">
+						Create a new Mad Lib template! Below, insert your own text!
+					</div>
+					<div class="new-template-input">
+						<textarea id="new-template-input-box"></textarea>
+					</div>
+					<div class="new-template-footer">
+						<button type="button" id="new-template-cancel">Cancel</button>
+						<button type="button" id="new-template-create">Create</button>
+					</div>
+				</div>
+			</section>
+
+			<section id="view-madlib-container" class="hidden">
+				<div class="view-madlib-window">
+					<div class="view-madlib-title-container">
+						<span class="view-madlib-title">Our Cafeteria</span>
+					</div>
+					<div class="view-madlib-text-container">
+						[example] Our school cafeteria has really gross food. Just thinking about it makes my stomach flip.
+					</div>
+					<div class="view-madlib-footer">
+						<button type="button" id="view-madlib-ok">OK</button>
 					</div>
 				</div>
 			</section>
 		</main>
-
-		<div id="backdrop" class="hidden"></div>
-
-		<section id="template-posts" class="hidden">
-			<div class="template-post">
-				<div class="template-post-title-container">
-					<span class="template-post-title"></span>
-				</div>
-				<div class="template-post-body">
-					<div class="word-input-container">
-						<label for="word-noun-input">Noun</label>
-						<input type="text" class="word-noun-input">
-					</div>
-					<div class="word-input-container">
-						<label for="word-noun-input">Noun</label>
-						<input type="text" class="word-noun-input">
-					</div>
-					<div class="word-input-container">
-						<label for="word-verb-input">Verb</label>
-						<input type="text" class="word-verb-input">
-					</div>
-					<div class="word-input-container">
-						<label for="word-adjective-input">Adjective</label>
-						<input type="text" class="word-adjective-input">
-					</div>
-					<div class="word-input-container">
-						<label for="word-adjective-input">Adjective</label>
-						<input type="text" class="word-adjective-input">
-					</div>
-				</div>
-				<div class="template-post-footer">
-					<button type="button" id="template-post-cancel">Cancel</button>
-					<button type="button" id="template-post-submit">Submit</button>
-				</div>
-			</div>
-		</section>
-
-		<section id="new-template-container" class="hidden">
-			<div class="new-template-window">
-				<div class="new-template-text-container">
-					Create a new Mad Lib template! Below, insert your own text!
-				</div>
-				<div class="new-template-input">
-					<textarea id="new-template-input-box"></textarea>
-				</div>
-				<div class="new-template-footer">
-					<button type="button" id="new-template-cancel">Cancel</button>
-					<button type="button" id="new-template-create">Create</button>
-				</div>
-			</div>
-		</section>
 	</body>
 </html>

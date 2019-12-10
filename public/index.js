@@ -98,3 +98,52 @@ newTemplateCancelButton.addEventListener('click', function ()
 	newTemplatePrompt.classList.add('hidden');
 	newTemplateInputBox.value = "";
 });
+
+// Completed Mad Libs
+var completedMadlib = document.getElementsByClassName('completed-madlib');
+var viewMadlibContainer = document.getElementById('view-madlib-container');
+var viewMadlibTitle = document.getElementsByClassName('view-madlib-title');
+var viewMadlibText = document.getElementsByClassName('view-madlib-text-container');
+var completedMadlibTitle = document.getElementsByClassName('madlib-title');
+var completedMadlibText = document.getElementsByClassName('madlib-text');
+
+for (var i = 0; i < completedMadlib.length; i++)
+{
+	(function (index)
+	{
+		completedMadlib[index].addEventListener('click', function ()
+		{
+			console.log('== Completed Mad Lib clicked');
+
+			backdrop.classList.remove('hidden');
+			viewMadlibContainer.classList.remove('hidden');
+			viewMadlibTitle[0].textContent = completedMadlibTitle[index].textContent;
+			viewMadlibText[0].textContent = completedMadlibText[index].textContent;
+		});
+	})(i);
+}
+
+// View Mad Lib OK Button
+var viewMadlibOkButton = document.getElementById('view-madlib-ok');
+
+viewMadlibOkButton.addEventListener('click', function ()
+{
+	backdrop.classList.add('hidden');
+	viewMadlibContainer.classList.add('hidden');
+});
+
+// Insert New Post
+function insertNewPost(title, noun, noun2, verb, adjective, adjective2)
+{
+	var templateContent =
+	{
+		Title: title,
+		Noun: photoURL,
+		Noun2: price,
+		Verb: city,
+		Adjective: adjective
+	};
+
+	var templateHTML = Handlebars.template.post(templateContent);
+	templates.insertAdjacentHTML("beforeend", templateHTML);
+};
