@@ -4,13 +4,17 @@ var exphbs = require('express-handlebars');
 var http = require("http");
 var app = express();
 var port = process.env.PORT || 3000;
+var completedMadlibData = require('./completedMadlibs');
 
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
 app.get('/', function (req, res, next)
 {
-	res.status(200).render('content');
+	res.status(200).render('content',
+	{
+		completedMadlibData: completedMadlibData
+	});
 });
 
 app.use(express.static('public'));

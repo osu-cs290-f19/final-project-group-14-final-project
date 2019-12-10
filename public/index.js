@@ -103,7 +103,9 @@ newTemplateCancelButton.addEventListener('click', function ()
 var completedMadlib = document.getElementsByClassName('completed-madlib');
 var viewMadlibContainer = document.getElementById('view-madlib-container');
 var viewMadlibTitle = document.getElementsByClassName('view-madlib-title');
+var viewMadlibText = document.getElementsByClassName('view-madlib-text-container');
 var completedMadlibTitle = document.getElementsByClassName('madlib-title');
+var completedMadlibText = document.getElementsByClassName('madlib-text');
 
 for (var i = 0; i < completedMadlib.length; i++)
 {
@@ -116,6 +118,7 @@ for (var i = 0; i < completedMadlib.length; i++)
 			backdrop.classList.remove('hidden');
 			viewMadlibContainer.classList.remove('hidden');
 			viewMadlibTitle[0].textContent = completedMadlibTitle[index].textContent;
+			viewMadlibText[0].textContent = completedMadlibText[index].textContent;
 		});
 	})(i);
 }
