@@ -99,22 +99,18 @@ newTemplateCancelButton.addEventListener('click', function ()
 	newTemplateInputBox.value = "";
 });
 
+// Insert New Post
+function insertNewPost(title, noun, noun2, verb, adjective, adjective2)
+{
+	var templateContent =
+	{
+		Title: title,
+		Noun: photoURL,
+		Noun2: price,
+		Verb: city,
+		Adjective: adjective
+	};
 
-
-
-function insertNewPost(title, noun, noun2, verb, adjective, adjective2) {
-
-
-  var TemplateContent =
-  {
-    Title: title,
-    Noun: photoURL,
-    Noun2: price,
-    Verb: city,
-    Adjective: adjective
-  };
-  var TemplateHTML = Handlebars.template.post(TemplateContent);
-  var TemplateContainer = document.getElementById("template")
-  TemplateContainer.insertAdjacentHTML("beforeend",TemplateHTML);
-
+	var templateHTML = Handlebars.template.post(templateContent);
+	templates.insertAdjacentHTML("beforeend", templateHTML);
 };
