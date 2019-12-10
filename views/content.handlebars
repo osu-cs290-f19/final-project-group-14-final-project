@@ -35,26 +35,9 @@
 	</section>
 
 	<section id="completed-madlibs" class="hidden">
-		<div class="completed-madlib">
-			<div class="madlib-content">
-				<div class="madlib-image-container">
-					<img src="smile-before.png">
-				</div>
-				<div class="madlib-title-container">
-					<span class="madlib-title">[MADLIB TITLE #1]</span>
-				</div>
-			</div>
-		</div>
-		<div class="completed-madlib">
-			<div class="madlib-content">
-				<div class="madlib-image-container">
-					<img src="smile-before.png">
-				</div>
-				<div class="madlib-title-container">
-					<span class="madlib-title">[MADLIB TITLE #2]</span>
-				</div>
-			</div>
-		</div>
+		{{#each completedMadlibData}}
+			{{> completedMadlib}}
+		{{/each}}
 	</section>
 
 	<section id="about-us" class="hidden">
