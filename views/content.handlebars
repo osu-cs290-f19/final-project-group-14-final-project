@@ -1,0 +1,117 @@
+<main class="content">
+	<nav class="navbar">
+		<ul class="navlist">
+			<li class="navitem tab-clicked" id="templates-tab"><span>Templates</span></li>
+			<li class="navitem" id="completed-madlibs-tab"><span>Completed Mad Libs</span></li>
+			<li class="navitem-right" id="about-us-tab"><span>About Us</span></li>
+		</ul>
+	</nav>
+	<section id="templates">
+		<div class="template">
+			<div class="template-content">
+				<div class="template-image-container">
+					<img src="smile-before.png">
+				</div>
+				<div class="template-title-container">
+					<span class="template-title">[TEMPLATE TITLE #1]</span>
+				</div>
+			</div>
+		</div>
+		<div class="template">
+			<div class="template-content">
+				<div class="template-image-container">
+					<img src="smile-before.png">
+				</div>
+				<div class="template-title-container">
+					<span class="template-title">[TEMPLATE TITLE #2]</span>
+				</div>
+			</div>
+		</div>
+
+		<button type="button" id="add-template-button">
+			<i class="fas fa-plus"></i>
+		</button>
+	</section>
+
+	<section id="completed-madlibs" class="hidden">
+		<div class="completed-madlib">
+			<div class="madlib-content">
+				<div class="madlib-image-container">
+					<img src="smile-before.png">
+				</div>
+				<div class="madlib-title-container">
+					<span class="madlib-title">[MADLIB TITLE #1]</span>
+				</div>
+			</div>
+		</div>
+		<div class="completed-madlib">
+			<div class="madlib-content">
+				<div class="madlib-image-container">
+					<img src="smile-before.png">
+				</div>
+				<div class="madlib-title-container">
+					<span class="madlib-title">[MADLIB TITLE #2]</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about-us" class="hidden">
+		<div class="about-us-content">
+			<div class="about-us-text-container">
+				<span class="about-us-text">This website was created by Kevin Moy, Trinity Polk, and Jarrod Saechao.</span>
+			</div>
+		</div>
+	</section>
+
+	<div id="backdrop" class="hidden"></div>
+
+	<section id="template-posts" class="hidden">
+		<div class="template-post">
+			<div class="template-post-title-container">
+				<span class="template-post-title"></span>
+			</div>
+			<div class="template-post-body">
+				<div class="word-input-container">
+					<label for="word-noun-input">Noun</label>
+					<input type="text" class="word-noun-input">
+				</div>
+				<div class="word-input-container">
+					<label for="word-noun-input">Noun2</label>
+					<input type="text" class="word-noun-input">
+				</div>
+				<div class="word-input-container">
+					<label for="word-verb-input">Verb</label>
+					<input type="text" class="word-verb-input">
+				</div>
+				<div class="word-input-container">
+					<label for="word-adjective-input">Adjective</label>
+					<input type="text" class="word-adjective-input">
+				</div>
+				<div class="word-input-container">
+					<label for="word-adjective-input">Adjective2</label>
+					<input type="text" class="word-adjective-input">
+				</div>
+			</div>
+			<div class="template-post-footer">
+				<button type="button" id="template-post-cancel">Cancel</button>
+				<button type="button" id="template-post-submit">Submit</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="new-template-container" class="hidden">
+		<div class="new-template-window">
+			<div class="new-template-text-container">
+				Create a new Mad Lib template! Below, insert your own text!
+			</div>
+			<div class="new-template-input">
+				<textarea id="new-template-input-box"></textarea>
+			</div>
+			<div class="new-template-footer">
+				<button type="button" id="new-template-cancel">Cancel</button>
+				<button type="button" id="new-template-create">Create</button>
+			</div>
+		</div>
+	</section>
+</main>
